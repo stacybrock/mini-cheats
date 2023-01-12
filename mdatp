@@ -1,0 +1,5 @@
+# get tags on device
+mdatp health --field edr_device_tags
+
+# set tags on device
+mdatp edr tag set --name GROUP --value "tag"
