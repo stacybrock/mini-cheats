@@ -1,0 +1,21 @@
+---
+tags: [ vcs ]
+---
+# Sync with fork upstream
+git fetch upstream
+git checkout <branch>
+git rebase upstream/<branch>
+git push origin <branch>
+
+# Add upstream repo
+git remote add upstream https://github.com/whoever/whatever.git
+# Initial pushes to origin will require the '-f' flag:
+git push -f origin <branch>
+
+# Push tag to upstream
+git push origin <tagname>
+
+# Delete tag
+git tag -d <tagname>
+# Delete tag from upstream
+git push origin --delete <tagname>
