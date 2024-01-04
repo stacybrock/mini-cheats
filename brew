@@ -1,0 +1,33 @@
+---
+syntax: bash
+tags: [ mac, deps ]
+---
+# Install formula
+brew install <formula>
+
+# Install cask
+brew install --cask <formula>
+
+# Upgrade specific formula
+brew upgrade <formula>
+
+# Upgrade homebrew and all installed formulae
+brew upgrade
+
+# Update homebrew and formulae definitions
+brew update
+
+# Uninstall a formula
+brew uninstall <formula>
+
+# List formulae that require a specific formula
+brew uses <formula> --installed
+
+# List installed formulae
+brew list
+
+# Fix
+brew doctor
+
+# Clean up
+brew cleanup
